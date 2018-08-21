@@ -1,3 +1,71 @@
-.list-group-item {
-  line-height: 2.5;
+.nav-wrapper {
+  padding: 5px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+/* Three image containers  */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+.row {
+  padding: 5px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.container_overlay_root {
+  position: relative;
+  width: 100%;
+  height: 100%;
+
+}
+
+.container_overlay_root .overlay {
+  position: absolute;
+  top: 1%;
+  left: 15%;
+
+}
+
+.btn {
+  border: 2px solid black;
+  background-color: transparent;
+  color: black;
+
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.success {
+  border-color: rgb(242, 40, 110);
+  color: rgb(242, 40, 110);
+  padding: px 20px;
+  
+}
+
+.success:hover {
+  background-color: rgb(242, 40, 110);
+  color: white;
+}
+
+.warning {
+  border-color: rgb(242, 40, 110);
+  color: rgb(242, 40, 110);
+  padding: px 30px;
+}
+
+.worning:hover {
+  background-color: rgb(242, 40, 110);
+  color: white;
 }
