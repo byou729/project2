@@ -68,7 +68,7 @@ module.exports = function(app) {
   
   app.post('/api/searchWine', function(req, res){
     var userSearch = req.body.search
-    request(`https://spoonacular-recipe-food-nutrition-v1.p.mashape.com/food/wine/recommendation?wine=${userSearch}`, {
+    request(`https://spoonacular-recipe-food-nutrition-v1.p.mashape.com/food/wine/dishes?wine=${userSearch}`, {
       headers: {
         "X-Mashape-Key": "T5uEkokBhXmsh7XQJzkzFT0dEm3gp1bYwnQjsnVn1IycLWPny6",
         "Accept": "application/json"
