@@ -34,7 +34,8 @@
 .container_overlay_root .overlay {
   position: absolute;
   top: 1%;
-  left: 15%;
+  left: 20%;
+
 
 }
 
@@ -68,4 +69,19 @@
 .worning:hover {
   background-color: rgb(242, 40, 110);
   color: white;
+}
+
+.container_table {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.container_table .content {
+  position: absolute;
+    top: 0;
+    background: rgba(0, 0, 0, 0.5); /* Black background with transparency */
+    color: #f1f1f1;
+    width: 100%;
+    padding: 10px;
 }

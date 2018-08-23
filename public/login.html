@@ -27,7 +27,7 @@
                 </div>
         </nav>
 
-        <br>
+        
         
         <div class="row">                
 
@@ -37,45 +37,50 @@
                         <img src="styles/images/wine.jpeg" alt="wine" style="width:100%;height:px;">
                         <div class="overlay">
                             <h6></h6>
-                            <div class="input-field col s7">
+                            <form id="wine-form">
+
+                                <div class="input-field col s12">
                                     <select id="wine-group">
                                         <optgroup label="RED">
-                                          <option value="1">Malbec</option>
-                                          <option value="2">Syrah/Shiraz</option>
-                                          <option value="3">Cabarnet Sauvignon</option>
-                                          <option value="4">Bordeaux Blend</option>
-                                          <option value="5">Merlot</option>
-                                          <option value="6">Zinfandel</option>
-                                          <option value="7">Pinot Noir</option>
-                                          <option value="8">Gamay</option>
+                                            <option value="1">Malbec</option>
+                                            <option value="1">Syrah/Shiraz</option>
+                                            <option value="1">Cabarnet Sauvignon</option>
+                                            <option value="1">Bordeaux Blend</option>
+                                            <option value="2">Merlot</option>
+                                            <option value="2">Zinfandel</option>
+                                            <option value="3">Pinot Noir</option>
+                                            <option value="3">Gamay</option>
                                         </optgroup>
                                         <optgroup label="ROSE">
-                                          <option value="9">All Roses</option>                                          
+                                          <option value="4">All Roses</option>                                          
                                         </optgroup>
                                         <optgroup label="LIGHT WHITE">
-                                          <option value="10">Sauvignon Blanc</option>
-                                          <option value="11">Pinot Blanc</option>
-                                          <option value="12">Pinot Gris</option>
+                                            <option value="5">Chardonnay</option>
+                                            <option value="6">Sauvignon Blanc</option>
+                                          <option value="6">Pinot Blanc</option>
+                                          <option value="6">Pinot Gris</option>
                                         </optgroup>
                                         <optgroup label="SPARKLING">
-                                          <option value="13">Champagne</option>
-                                          <option value="14">Prosecco</option>
-                                          <option value="15">Sparkling Rose</option>
+                                            <option value="7">Champagne</option>
+                                            <option value="7">Prosecco</option>
+                                            <option value="7">Sparkling Rose</option>
                                         </optgroup>
                                         <optgroup label="SWEET WHITE/DESSERT">
-                                          <option value="16">Moscato</option>
-                                          <option value="17">Riesling</option>
-                                          <option value="18">Port</option>
-                                          <option value="19">Sherry</option>
-                                          <option value="20">Madeira</option>
-                                          <option value="21">Muscat</option>
-                                        </optgroup>
-                                        
+                                            <option value="8">Moscato</option>
+                                            <option value="8">Riesling</option>
+                                            <option value="9">Port</option>
+                                            <option value="9">Sherry</option>
+                                            <option value="9">Madeira</option>
+                                          <option value="9">Muscat</option>
+                                        </optgroup>                                        
                                     </select>
+                                    
                                     <label>PICK YOUR WINE TO PAIR</label>
                                 </div>
-                            <div class="col s5"><button class="btn success">Pair Food</button></div>
-                            
+                                
+                                <div class="col s6"><button class="btn success" type="submit">Pair Food</button></div>
+                            </form>
+                                
                         </div>
 
                 </div>
@@ -84,8 +89,16 @@
             </div>
 
             <div class="column">
-                <div></div>
-                    <img src="styles/images/table.jpeg" alt="table" style="width:100%;height:px;">
+                <div class="container_table">
+                  <img src="styles/images/table.jpeg" alt="table" style="width:100%;height:px;">
+                    <div class="content">
+                        <h4>Paired Recommendation</h4>
+                        <p>Wine & Food</p>
+
+                    </div>
+
+                </div>
+                    
             </div>
 
             <div class="column">
@@ -93,37 +106,41 @@
                     <img src="styles/images/food.jpeg" alt="food" style="width:100%;height:px;">
                     <div class="overlay">
                         <h6 class="muted"></h6>
-                        <div class="col s5"><button class="btn warning">Pair Wine</button></div>
-                            <div class="input-field col s7">
-                                <select id="food-group">
-                                    <optgroup label="MEAT">
-                                      <option value="1">Red Meat(beef/lamb)</option>
-                                      <option value="2">Cured Meat(bacon/salami)</option>
-                                      <option value="3">Pork(roast/tenderloin/chop)</option>
-                                      <option value="4">Poultry(chicken/duck/turkey)</option>
-                                      <option value="5">Mollusk(oyster/mussel/clam)</option>
-                                      <option value="6">Fish(tuna/cod/trout/bass)</option>
-                                      <option value="7">Lobster & Shellfish(prawn/crab)</option>
-                                    </optgroup>
-                                    <optgroup label="DAIRY">
-                                      <option value="8">Soft Cheese</option>
-                                      <option value="9">Hard Cheese</option>
-                                    </optgroup>
-                                    <optgroup label="VEGETABLE">
-                                      <option value="10">Green Vegetables(lettuce/kale)</option>
-                                      <option value="11">Root Vegetables(pumpkin/carrot)</option>
-                                      <option value="12">Nightshades(tomato/eggplant)</option>
-                                      <option value="13">Nuts & Seeds</option>
-                                    </optgroup>
-                                    <optgroup label="SWEET">
-                                      <option value="14">Fruit & Berries(strawberry/orange/apple)</option>
-                                      <option value="15">Vanilla & Caramel(creme brulee/ice cream)</option>
-                                      <option value="16">Chocolate & Coffee</option>                                      
-                                    </optgroup>
-                                </select>
-                                <label>PICK YOUR FOOD TO PAIR</label>
+
+                          <form id="food-form">
+
+                              <div class="input-field col s12">
+                                  <select id="food-group">
+                                      <optgroup label="MEAT">
+                                          <option value="1">Red Meat(beef/lamb)</option>
+                                          <option value="2">Cured Meat(bacon/salami)</option>
+                                          <option value="3">Pork(roast/tenderloin/chop)</option>
+                                          <option value="4">Poultry(chicken/duck/turkey)</option>
+                                          <option value="5">Mollusk(oyster/mussel/clam)</option>
+                                          <option value="6">Fish(tuna/cod/trout/bass)</option>
+                                          <option value="7">Lobster & Shellfish(prawn/crab)</option>
+                                        </optgroup>
+                                        <optgroup label="DAIRY">
+                                            <option value="8">Soft Cheese</option>
+                                            <option value="9">Hard Cheese</option>
+                                        </optgroup>
+                                        <optgroup label="VEGETABLE">
+                                            <option value="10">Green Vegetables(lettuce/kale)</option>
+                                            <option value="11">Root Vegetables(pumpkin/carrot)</option>
+                                            <option value="12">Nightshades(tomato/eggplant)</option>
+                                            <option value="13">Nuts & Seeds</option>
+                                        </optgroup>
+                                        <optgroup label="SWEET">
+                                            <option value="14">Fruit & Berries(strawberry/orange/apple)</option>
+                                            <option value="15">Vanilla & Caramel(creme brulee/ice cream)</option>
+                                            <option value="16">Chocolate & Coffee</option>                                      
+                                        </optgroup>
+                                    </select>
+                                    <label>PICK YOUR FOOD TO PAIR</label>
+                                </div>
+                                <div class="col s6"><button class="btn warning" type="submit">Pair Wine</button></div>
                             </div>
-                        </div>
+                        </form>
                     </div>
 
                 </div>
