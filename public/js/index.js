@@ -1,6 +1,22 @@
 $(document).ready(function(){
   $("#food-group").formSelect();
   $("#wine-group").formSelect();
+  
+//Select and submit wine selection
+$("#wine-form").on("submit", function(event){
+  event.preventDefault();
+  console.log("Submitting wine form");
+  var selectedWine = $("#wine-group").val();
+  console.log(selectedWine)
+})
+
+ //Select and submit food selection
+$("#food-form").on("submit", function(event){
+  event.preventDefault();
+console.log("Submitting food form");
+    var selectedFood = $("#food-group").val();
+console.log(selectedFood)
+})
 });
 
 // Get references to page elements
