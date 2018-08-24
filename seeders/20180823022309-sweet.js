@@ -12,6 +12,27 @@ module.exports = {
         isBetaMember: false
       }], {});
     */
+   return queryInterface.bulkInsert('Sweet', [{
+    id: 8,
+    food_name: "Fruit & Berries(strawberry/orange/apple)",
+    perfectPair: "Sweet White",
+    foreignKey: "id"
+  }], {});
+
+  return queryInterface.bulkInsert('Sweet', [{
+    id: 9,
+    food_name: "Vanilla & Caramel(creme brulee/ice cream)",
+    perfectPair: "Sweet White",
+    foreignKey: "id"
+  }], {});
+
+  return queryInterface.bulkInsert('Sweet', [{
+    id: 9,
+    food_name: "Chocolate & Coffee",
+    perfectPair: "Sweet White",
+    foreignKey: "id"
+  }], {});
+
   },
 
   down: (queryInterface, Sequelize) => {
