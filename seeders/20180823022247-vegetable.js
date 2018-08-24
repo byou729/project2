@@ -12,6 +12,33 @@ module.exports = {
         isBetaMember: false
       }], {});
     */
+   return queryInterface.bulkInsert('Vegetables', [{
+    id: 5,
+    food_name: "Green Vegetables(lettuce/kale)",
+    perfectPair: "Medium Red",
+    foreignKey: "id"
+  }], {});
+
+  return queryInterface.bulkInsert('Vegetables', [{
+    id: 7,
+    food_name: "Root Vegetables(pumpkin/carrot)",
+    perfectPair: "Medium Red",
+    foreignKey: "id"
+  }], {});
+
+  return queryInterface.bulkInsert('Vegetables', [{
+    id: 3,
+    food_name: "Nightshades(tomato/eggplant)",
+    perfectPair: "Medium Red",
+    foreignKey: "id"
+  }], {});
+
+  return queryInterface.bulkInsert('Vegetables', [{
+    id: 8,
+    food_name: "Nuts & Seeds",
+    perfectPair: "Medium Red",
+    foreignKey: "id"
+  }], {});
   },
 
   down: (queryInterface, Sequelize) => {
