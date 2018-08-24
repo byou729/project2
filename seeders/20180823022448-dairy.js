@@ -12,6 +12,19 @@ module.exports = {
         isBetaMember: false
       }], {});
     */
+   return queryInterface.bulkInsert('Dairies', [{
+    id: 2,
+    food_name: "Soft Cheese",
+    perfectPair: "LIGHT RED",
+    foreignKey: "id"
+  }], {});
+
+  return queryInterface.bulkInsert('Dairies', [{
+    id: 1,
+    food_name: "Hard Cheese",
+    perfectPair: "LIGHT RED",
+    foreignKey: "id"
+  }], {});
   },
 
   down: (queryInterface, Sequelize) => {
