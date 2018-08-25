@@ -1,0 +1,181 @@
+<!-- views/pages/index.ejs -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+<% include ../partials/head %>
+</head>
+<body class="container">
+
+<header>
+    <% include ../partials/header %>
+</header>
+
+<main>
+     <body> 
+
+  
+  
+    
+            
+            
+            <div class="row">                
+    
+                <div class="column"> 
+                    
+                    <div class="container_overlay_root">
+                            <img src="styles/images/wine.jpeg" alt="wine" style="width:100%;">
+                            <div class="overlay">
+                                <h6></h6>
+                                <form id="wine-form">
+    
+                                    <div class="input-field col s12">
+                                        <select id="wine-group">
+                                            <optgroup label="RED">
+                                                <option value="1">Malbec</option>
+                                                <option value="1">Syrah/Shiraz</option>
+                                                <option value="1">Cabarnet Sauvignon</option>
+                                                <option value="1">Bordeaux Blend</option>
+                                                <option value="2">Merlot</option>
+                                                <option value="2">Zinfandel</option>
+                                                <option value="3">Pinot Noir</option>
+                                                <option value="3">Gamay</option>
+                                            </optgroup>
+                                            <optgroup label="ROSE">
+                                              <option value="4">All Roses</option>                                          
+                                            </optgroup>
+                                            <optgroup label="LIGHT WHITE">
+                                                <option value="5">Chardonnay</option>
+                                                <option value="6">Sauvignon Blanc</option>
+                                              <option value="6">Pinot Blanc</option>
+                                              <option value="6">Pinot Gris</option>
+                                            </optgroup>
+                                            <optgroup label="SPARKLING">
+                                                <option value="7">Champagne</option>
+                                                <option value="7">Prosecco</option>
+                                                <option value="7">Sparkling Rose</option>
+                                            </optgroup>
+                                            <optgroup label="SWEET WHITE/DESSERT">
+                                                <option value="8">Moscato</option>
+                                                <option value="8">Riesling</option>
+                                                <option value="9">Port</option>
+                                                <option value="9">Sherry</option>
+                                                <option value="9">Madeira</option>
+                                              <option value="9">Muscat</option>
+                                            </optgroup>                                        
+                                        </select>
+                                        
+                                        <label>PICK YOUR WINE TO PAIR</label>
+                                    </div>
+                                    
+                                    <div class="col s12"><button class="btn success" type="submit">Pair Food</button></div>
+                                       <!-- <a class="waves-effect waves-teal btn-flat" type="submit">Pair Food</a></div> -->
+                                       <!-- <button class="btn success" type="submit">Pair Food</button></div> -->
+                                </form>
+                                    
+                            </div>
+    
+                    </div>
+    
+                        
+                </div>
+    
+                <div class="column">
+                    <div class="container_table">
+                      <img src="styles/images/table.jpeg" alt="table" style="width:100%;">
+                        <div class="content col s12">
+                            <h5>Recommendations</h5>
+                            <p>Wine & Food</p>
+    
+                        </div>
+    
+                    </div>
+                        
+                </div>
+    
+                <div class="column">
+                    <div class="container_overlay_root">
+                        <img src="styles/images/food.jpeg" alt="food" style="width:100%;">
+                        <div class="overlay">
+                            <h6 class="muted"></h6>
+    
+                              <form id="food-form">
+    
+                                  <div class="input-field col s12">
+                                      <select id="food-group">
+                                          <optgroup label="MEAT">
+                                              <option value="1">Red Meat(beef/lamb)</option>
+                                              <option value="2">Cured Meat(bacon/salami)</option>
+                                              <option value="3">Pork(roast/tenderloin/chop)</option>
+                                              <option value="4">Poultry(chicken/duck/turkey)</option>
+                                              <option value="5">Mollusk(oyster/mussel/clam)</option>
+                                              <option value="6">Fish(tuna/cod/trout/bass)</option>
+                                              <option value="7">Lobster & Shellfish(prawn/crab)</option>
+                                            </optgroup>
+                                            <optgroup label="DAIRY">
+                                                <option value="8">Soft Cheese</option>
+                                                <option value="9">Hard Cheese</option>
+                                            </optgroup>
+                                            <optgroup label="VEGETABLE">
+                                                <option value="10">Green Vegetables(lettuce/kale)</option>
+                                                <option value="11">Root Vegetables(pumpkin/carrot)</option>
+                                                <option value="12">Nightshades(tomato/eggplant)</option>
+                                                <option value="13">Nuts & Seeds</option>
+                                            </optgroup>
+                                            <optgroup label="SWEET">
+                                                <option value="14">Fruit & Berries(strawberry/orange/apple)</option>
+                                                <option value="15">Vanilla & Caramel(creme brulee/ice cream)</option>
+                                                <option value="16">Chocolate & Coffee</option>                                      
+                                            </optgroup>
+                                        </select>
+                                        <label>PICK YOUR FOOD TO PAIR</label>
+                                    </div>
+                                    <div class="col s12"><button class="btn warning" type="submit">Pair Wine</button></div>
+                                </div>
+                            </form>
+                        </div>
+    
+                    </div>
+            </div>
+          
+           
+    <div class="jumbotron">
+        <h1>Wine Pairing</h1>
+        <p>First EJS App</p>
+    
+        <h2>Variable</h2>
+<p><%= tagline %></p>
+    
+    </div>
+
+    <h2>Loop</h2>
+
+<ul>
+    <% drinks.forEach(function(drink) { %>
+        <li><%= drink.name %> - <%= drink.drunkness %></li>
+    <% }); %>
+</ul>
+</main>
+
+<footer>
+    <% include ../partials/footer %>
+</footer>
+
+</body>
+
+<script src="https://code.jquery.com/jquery.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+
+
+<script type="text/JavaScript" src="/js/index.js"></script>
+
+
+
+
+
+</html>

@@ -11,19 +11,13 @@
 .column {
   float: left;
   width: 33.33%;
-<<<<<<< HEAD
-=======
   
->>>>>>> 9212211ec7b689be8faaf787b6f3b3fccdc26fde
   padding: 5px;
 }
 
 .row {
   padding: 5px;
-<<<<<<< HEAD
-=======
  
->>>>>>> 9212211ec7b689be8faaf787b6f3b3fccdc26fde
 }
 
 /* Clear floats after image containers */
@@ -31,11 +25,8 @@
   content: "";
   clear: both;
   display: table;
-<<<<<<< HEAD
-=======
   object-fit: cover;
   grid-template-rows: normal;
->>>>>>> 9212211ec7b689be8faaf787b6f3b3fccdc26fde
 }
 .container_overlay_root {
   position: relative;
@@ -47,31 +38,19 @@
 .container_overlay_root .overlay {
   position: absolute;
   top: 1%;
-<<<<<<< HEAD
-  left: 15%;
-=======
   left: 20%;
 
->>>>>>> 9212211ec7b689be8faaf787b6f3b3fccdc26fde
 
 }
 
 .btn {
-<<<<<<< HEAD
-  border: 2px solid black;
-=======
   border: 2px solid black; 
->>>>>>> 9212211ec7b689be8faaf787b6f3b3fccdc26fde
   background-color: transparent;
   color: black;
 
   font-size: 15px;
   cursor: pointer;
-<<<<<<< HEAD
-}
-=======
 } 
->>>>>>> 9212211ec7b689be8faaf787b6f3b3fccdc26fde
 
 .success {
   border-color: rgb(242, 40, 110);
@@ -94,8 +73,6 @@
 .worning:hover {
   background-color: rgb(242, 40, 110);
   color: white;
-<<<<<<< HEAD
-=======
 }
 
 .container_table {
@@ -112,5 +89,4 @@
     width: 100%;
     padding: 10px;
     text-align: center;
->>>>>>> 9212211ec7b689be8faaf787b6f3b3fccdc26fde
 }

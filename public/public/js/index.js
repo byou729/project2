@@ -1,13 +1,3 @@
-<<<<<<< HEAD
-$(document).ready(function(){
-    $("#food-group").formSelect();
-});
-
-$(document).ready(function(){
-  $("#wine-group").formSelect();
-});
-
-=======
 
 // Initialize wine and food picker
 $(document).ready(function(){
@@ -52,7 +42,6 @@ $(document).ready(function(){
 // Hide and Show Paired Reccommendation
 
 
->>>>>>> 9212211ec7b689be8faaf787b6f3b3fccdc26fde
 // Get references to page elements
 var $exampleText = $("#example-text");
 var $exampleDescription = $("#example-description");
