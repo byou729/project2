@@ -23,37 +23,37 @@ module.exports = {
     foodName: "cured meat",
     foodCategory: "meat",
     perfectPair:"bold red",
-    wine_id:1
+    wine_id:3
   }], {});
   return queryInterface.bulkInsert('poultry)', [{
     foodName: "poultry(chicken/duck/turkey",
     foodCategory: "meat",
     perfectPair:"bold red",
-    wine_id: 1
+    wine_id: 2
   }], {});
   return queryInterface.bulkInsert('pork', [{
     foodName: "pork(roast/tenderloin/chop)",
     foodCategory: "meat",
     perfectPair:"bold red",
-    wine_id: 1
+    wine_id: 3
   }], {});
   return queryInterface.bulkInsert('mollusk', [{
     foodName: "mollusk(oyster/mussel/clam)",
     foodCategory: "meat",
     perfectPair:"bold red",
-    wine_id: 2
+    wine_id: 7
   }], {});
   return queryInterface.bulkInsert('fish', [{
     foodName: "fish(tuna/cod/trout/bass",
     foodCategory: "meat",
     perfectPair:"bold red",
-    wine_id:2
+    wine_id:6
   }], {});
   return queryInterface.bulkInsert('lobster', [{
     foodName: "lobster & shellfish(prawn/crab)",
     foodCategory: "meat",
     perfectPair:"bold red",
-    wine_id:2
+    wine_id:5
   }], {});
 
 

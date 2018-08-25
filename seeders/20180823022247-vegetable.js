@@ -16,7 +16,7 @@ module.exports = {
     id: 5,
     food_name: "Green Vegetables(lettuce/kale)",
     perfectPair: "Medium Red",
-    wine_id: 2,
+    wine_id: 6,
     foreignKey: "wine_id"
   }], {});
 
@@ -24,7 +24,7 @@ module.exports = {
     id: 7,
     food_name: "Root Vegetables(pumpkin/carrot)",
     perfectPair: "Medium Red",
-    wine_id: 2,
+    wine_id: 4,
     foreignKey: "wine_id"
   }], {});
 
@@ -40,7 +40,7 @@ module.exports = {
     id: 8,
     food_name: "Nuts & Seeds",
     perfectPair: "Medium Red",
-    wine_id: 2,
+    wine_id: 8,
     foreignKey: "wine_id"
   }], {});
   },

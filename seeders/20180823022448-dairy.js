@@ -16,7 +16,7 @@ module.exports = {
     id: 2,
     food_name: "Soft Cheese",
     perfectPair: "LIGHT RED",
-    wine_id: 2,
+    wine_id: 3,
     foreignKey: "wine_id"
   }], {});
 
@@ -24,7 +24,7 @@ module.exports = {
     id: 1,
     food_name: "Hard Cheese",
     perfectPair: "LIGHT RED",
-    wine_id: 2,
+    wine_id: 1,
     foreignKey: "wine_id"
   }], {});
   },
