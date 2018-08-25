@@ -9,20 +9,16 @@ module.exports = function(sequelize, DataTypes) {
   });
   Wines.associate = function(models) {
     Wines.hasMany(models.Meat, {
-      through: models.Join,
       foreignKey: "meat_id"
     });
   
-   Wines.hasMany(models.Vegetable, {
-    through: models.Join,
+   Wines.hasMany(models.Vegetable, 
       foreignKey: "vegetable_id"  
   });
-  Wines.hasMany(models.Fruits, {
-    through: models.Join,
+  Wines.hasMany(models.Fruits, 
     foreignKey: "fruits_id" 
   });
-  Wines.hasMany(models.Dairy, {
-    through: models.Join,
+  Wines.hasMany(models.Dairy, 
     foreignKey: "dairy_id" 
   });
 };
