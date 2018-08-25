@@ -6,7 +6,7 @@ var exphbs = require("express-handlebars");
 var db = require("./models");
 
 var app = express();
-var PORT = process.env.PORT || 8080;
+var PORT = process.env.PORT || 3000;
 //Below for local server
 app.listen(8080);
 console.log('8080 is the magic port');
@@ -38,7 +38,7 @@ app.get('/', function(req, res) {
       { name: 'Desert', drunkness: 10 },
       { name: 'Rose', drunkess: 15},
   ];
-  var tagline = "Now we need to tie this in Mysql";
+  var tagline = "";
 
   res.render('pages/index', {
       drinks: drinks,
