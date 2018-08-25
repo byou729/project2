@@ -16,7 +16,7 @@ module.exports = function(sequelize, DataTypes) {
       foreignKey: "vegetable_id"  
   });
   Wines.hasMany(models.Sweets, {
-    foreignKey: "fruits_id" 
+    foreignKey: "sweets_id" 
   });
   Wines.hasMany(models.Dairy, {
     foreignKey: "dairy_id" 
