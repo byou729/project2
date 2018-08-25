@@ -8,17 +8,17 @@ module.exports = function(sequelize, DataTypes) {
     fruits_id: DataTypes.INTEGER
   });
   Wines.associate = function(models) {
-    Wines.hasMany(models.Meat, {
+    Wines.belongsTo(models.Meat, {
       foreignKey: "meat_id"
     });
   
-   Wines.hasMany(models.Vegetable, {
+   Wines.belongsTo(models.Vegetable, {
       foreignKey: "vegetable_id"  
   });
-  Wines.hasMany(models.Sweets, {
+  Wines.belongsTo(models.Sweets, {
     foreignKey: "sweets_id" 
   });
-  Wines.hasMany(models.Dairy, {
+  Wines.belongsTo(models.Dairy, {
     foreignKey: "dairy_id" 
   });
 };

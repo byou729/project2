@@ -23,7 +23,7 @@ module.exports = function(app) {
      include: [db.Wines]
    }).then(function(dbDairy) {
      res.json(db.Dairy);
-     console.log(result)
+     console.log(results)
    });
  });
 };
