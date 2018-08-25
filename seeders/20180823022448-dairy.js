@@ -12,18 +12,20 @@ module.exports = {
         isBetaMember: false
       }], {});
     */
-   return queryInterface.bulkInsert('Dairies', [{
+   return queryInterface.bulkInsert('Dairy', [{
     id: 2,
     food_name: "Soft Cheese",
     perfectPair: "LIGHT RED",
-    foreignKey: "id"
+    wine_id: 2,
+    foreignKey: "wine_id"
   }], {});
 
   return queryInterface.bulkInsert('Dairies', [{
     id: 1,
     food_name: "Hard Cheese",
     perfectPair: "LIGHT RED",
-    foreignKey: "id"
+    wine_id: 2,
+    foreignKey: "wine_id"
   }], {});
   },
 
