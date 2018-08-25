@@ -21,6 +21,24 @@ $(document).ready(function(){
   }) 
 });
 
+//$(document).ready(function() {
+  //$('input#input_text, textarea#textarea2').characterCounter();
+
+  //Select and submit comments 
+ // $("input#input_text, textarea#textarea2").on("submit", function(event) {
+ //   event.preventDefault();
+   
+   
+  //  var newComment = {
+     // author: $("#input_text").val().trim(),
+     // body: $("#textarea2").val().trim(),
+     // created_at: moment().format("YYYY-MM-DD HH:mm:ss")
+   // };//
+   
+    //console.log(newComment);
+//});//
+      
+
 // Hide and Show Paired Reccommendation
 
 
