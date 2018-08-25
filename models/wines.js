@@ -12,13 +12,13 @@ module.exports = function(sequelize, DataTypes) {
       foreignKey: "meat_id"
     });
   
-   Wines.hasMany(models.Vegetable, 
+   Wines.hasMany(models.Vegetable, {
       foreignKey: "vegetable_id"  
   });
-  Wines.hasMany(models.Fruits, 
+  Wines.hasMany(models.Sweets, {
     foreignKey: "fruits_id" 
   });
-  Wines.hasMany(models.Dairy, 
+  Wines.hasMany(models.Dairy, {
     foreignKey: "dairy_id" 
   });
 };
