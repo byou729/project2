@@ -10,7 +10,7 @@ module.exports = function(app) {
    }).then(function(dbDairy) {
      res.json(dbDairy);
    });
- });
+ 
 
  app.get("/api/dairy/:id", function(req, res) {
    // Here we add an "include" property to our options in our findOne query
@@ -18,11 +18,11 @@ module.exports = function(app) {
    // In this case, just db.Post
    db.Dairy.findOne({
      where: {
-       id: req.params.id
+       id: req.params.2,
      },
      include: [db.Wines]
    }).then(function(dbDairy) {
-     res.json(dbDairy);
+     res.json(db.Dairy);
      console.log(result)
    });
  });
