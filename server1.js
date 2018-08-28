@@ -6,9 +6,9 @@ var exphbs = require("express-handlebars");
 var db = require("./models");
 
 var app = express();
-var PORT = process.env.PORT || 3000;
+var PORT = process.env.PORT || 3306;
 //Below for local server
-app.listen(8080);
+// app.listen(8080);
 console.log('8080 is the magic port');
 
 // Middleware

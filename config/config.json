@@ -1,9 +1,9 @@
 {
   "development": {
-    "username": "root",
-    "password": "root",
-    "database": "wines_db",
-    "host": "localhost",
+    "username": "lfd97ok6q4ao5l9q",
+    "password": "jd8l040e2mrx05hk",
+    "database": "w0faiarn6t94jpv8",
+    "host": "uc13jynhmkss3nve.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
     "dialect": "mysql"
   },
   "test": {
